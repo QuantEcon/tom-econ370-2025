@@ -1,0 +1,24 @@
+format: jb-book
+root: intro
+parts:
+- caption: Introduction
+  chapters:
+  - file: inflation_history
+  - file: french_rev 
+- caption: "Linear Dynamics: Finite Horizons"
+  chapters:
+  - file: pv
+  - file: cons_smooth
+  - file: equalizing_difference
+  - file: cagan_ree
+  - file: cagan_adaptive 
+- caption: Monetary-Fiscal Policy Interactions
+  chapters:
+  - file: money_inflation
+  - file: unpleasant
+  - file: money_inflation_nonlinear
+  - file: laffer_adaptive
+- caption: Other
+  chapters:
+  - file: zreferences
+  - file: status
