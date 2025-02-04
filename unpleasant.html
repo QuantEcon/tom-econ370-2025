@@ -252,7 +252,7 @@ by printing money at times <span class="math notranslate nohighlight">\(t \geq T
 \]</div>
 <p>or</p>
 <div class="math notranslate nohighlight" id="equation-eq-up-bmotion">
-<span class="eqno">(64)<a class="headerlink" href="#equation-eq-up-bmotion" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(69)<a class="headerlink" href="#equation-eq-up-bmotion" title="Permalink to this equation">#</a></span>\[
 b_t - b_{t-1} R_{t-1} = g
 \]</div>
 <p>where</p>
@@ -262,7 +262,7 @@ b_t - b_{t-1} R_{t-1} = g
 </ul>
 <p>The demand for real balances is</p>
 <div class="math notranslate nohighlight" id="equation-eq-up-bdemand">
-<span class="eqno">(65)<a class="headerlink" href="#equation-eq-up-bdemand" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(70)<a class="headerlink" href="#equation-eq-up-bdemand" title="Permalink to this equation">#</a></span>\[
 b_t = \gamma_1 - \gamma_2 R_t^{-1} . 
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\gamma_1 &gt; \gamma_2 &gt; 0\)</span>.</p>
@@ -289,7 +289,7 @@ and <span class="math notranslate nohighlight">\(\widetilde R \check B_{-1}\)</s
 \]</div>
 <p>or</p>
 <div class="math notranslate nohighlight" id="equation-eq-openmarketconstraint">
-<span class="eqno">(66)<a class="headerlink" href="#equation-eq-openmarketconstraint" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(71)<a class="headerlink" href="#equation-eq-openmarketconstraint" title="Permalink to this equation">#</a></span>\[
 B_{-1} - \check B_{-1} = \frac{1}{p_0 \widetilde R} \left( \check m_0 - m_0 \right)  
 \]</div>
 <p>This equation says that the government (e.g., the central bank) can <em>decrease</em> <span class="math notranslate nohighlight">\(m_0\)</span> relative to
@@ -303,7 +303,7 @@ B_{-1} - \check B_{-1} = \frac{1}{p_0 \widetilde R} \left( \check m_0 - m_0 \rig
 uses an open market operation to lower the price level in the face of a persistent fiscal
 deficit that takes the form of a positive <span class="math notranslate nohighlight">\(g\)</span>.</p>
 <p>Just before time <span class="math notranslate nohighlight">\(0\)</span>, the government chooses <span class="math notranslate nohighlight">\((m_0, B_{-1})\)</span>  subject to constraint
-<a class="reference internal" href="#equation-eq-openmarketconstraint">(66)</a>.</p>
+<a class="reference internal" href="#equation-eq-openmarketconstraint">(71)</a>.</p>
 <p>For <span class="math notranslate nohighlight">\(t =0, 1, \ldots, T-1\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -322,7 +322,7 @@ m_{t+1} &amp; = m_t + p_t \overline g
 \]</div>
 <p>where</p>
 <div class="math notranslate nohighlight" id="equation-eq-overlineg">
-<span class="eqno">(67)<a class="headerlink" href="#equation-eq-overlineg" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(72)<a class="headerlink" href="#equation-eq-overlineg" title="Permalink to this equation">#</a></span>\[
 \overline g = \left[(\tilde R -1) B_{T-1} +  g \right]
 \]</div>
 <p>We want to compute an equilibrium <span class="math notranslate nohighlight">\(\{p_t,m_t,b_t, R_t\}_{t=0}\)</span> sequence under this scheme for
@@ -338,21 +338,21 @@ running monetary and fiscal policies.</p>
 <p>To start our description of our algorithm, it is useful to recall that a stationary rate of return
 on currency <span class="math notranslate nohighlight">\(\bar R\)</span> solves the quadratic equation</p>
 <div class="math notranslate nohighlight" id="equation-eq-up-steadyquadratic">
-<span class="eqno">(68)<a class="headerlink" href="#equation-eq-up-steadyquadratic" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(73)<a class="headerlink" href="#equation-eq-up-steadyquadratic" title="Permalink to this equation">#</a></span>\[
 -\gamma_2 + (\gamma_1 + \gamma_2 - \overline g) \bar R - \gamma_1 \bar R^2 = 0
 \]</div>
-<p>Quadratic equation <a class="reference internal" href="#equation-eq-up-steadyquadratic">(68)</a> has two roots, <span class="math notranslate nohighlight">\(R_l &lt; R_u &lt; 1\)</span>.</p>
+<p>Quadratic equation <a class="reference internal" href="#equation-eq-up-steadyquadratic">(73)</a> has two roots, <span class="math notranslate nohighlight">\(R_l &lt; R_u &lt; 1\)</span>.</p>
 <p>For reasons described at the end of <a class="reference internal" href="money_inflation.html"><span class="doc">Money Financed Government Deficits and Price Levels</span></a>, we select the larger root <span class="math notranslate nohighlight">\(R_u\)</span>.</p>
 <p>Next, we compute</p>
 <div class="math notranslate nohighlight" id="equation-eq-laffertstationary">
-<span class="eqno">(69)<a class="headerlink" href="#equation-eq-laffertstationary" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(74)<a class="headerlink" href="#equation-eq-laffertstationary" title="Permalink to this equation">#</a></span>\[
 \begin{aligned}
 R_T &amp; = R_u \cr
 b_T &amp; = \gamma_1 - \gamma_2 R_u^{-1} \cr
 p_T &amp; = \frac{m_0}{\gamma_1 - \overline g - \gamma_2 R_u^{-1}}
 \end{aligned}
 \]</div>
-<p>We can compute continuation sequences <span class="math notranslate nohighlight">\(\{R_t, b_t\}_{t=T+1}^\infty\)</span> of rates of return and real balances that are associated with an equilibrium by solving equation <a class="reference internal" href="#equation-eq-up-bmotion">(64)</a> and <a class="reference internal" href="#equation-eq-up-bdemand">(65)</a> sequentially  for <span class="math notranslate nohighlight">\(t \geq 1\)</span>:</p>
+<p>We can compute continuation sequences <span class="math notranslate nohighlight">\(\{R_t, b_t\}_{t=T+1}^\infty\)</span> of rates of return and real balances that are associated with an equilibrium by solving equation <a class="reference internal" href="#equation-eq-up-bmotion">(69)</a> and <a class="reference internal" href="#equation-eq-up-bdemand">(70)</a> sequentially  for <span class="math notranslate nohighlight">\(t \geq 1\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{aligned}
@@ -381,7 +381,7 @@ p_0 &amp;  = \gamma_1^{-1} \left[ \sum_{j=0}^\infty \lambda^j m_{j} \right] \cr
 \]</div>
 <p>Thus,</p>
 <div class="math notranslate nohighlight" id="equation-eq-allts">
-<span class="eqno">(70)<a class="headerlink" href="#equation-eq-allts" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(75)<a class="headerlink" href="#equation-eq-allts" title="Permalink to this equation">#</a></span>\[
 \begin{aligned}
 p_0 &amp; = \gamma_1^{-1} m_0  \left\{ \frac{1 - \lambda^T}{1-\lambda} +  \frac{\lambda^T}{R_u-\lambda}   \right\} \cr
 p_1 &amp; = \gamma_1^{-1} m_0  \left\{ \frac{1 - \lambda^{T-1}}{1-\lambda} +  \frac{\lambda^{T-1}}{R_u-\lambda}   \right\} \cr
@@ -397,14 +397,14 @@ p_t = \gamma_1^{-1} m_0 + \lambda p_{t+1}, \quad t = T-1, T-2, \ldots, 0
 \]</div>
 <p>starting from</p>
 <div class="math notranslate nohighlight" id="equation-eq-ptformula">
-<span class="eqno">(71)<a class="headerlink" href="#equation-eq-ptformula" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(76)<a class="headerlink" href="#equation-eq-ptformula" title="Permalink to this equation">#</a></span>\[
 p_T =   \frac{m_0}{\gamma_1 - \overline g - \gamma_2 R_u^{-1}}  = \gamma_1^{-1} m_0  \left\{\frac{1}{R_u-\lambda} \right\}
 \]</div>
 <div class="proof remark admonition" id="equivalence">
 <p class="admonition-title"><span class="caption-number">Remark 4 </span></p>
 <section class="remark-content" id="proof-content">
-<p>We can verify the equivalence of the two formulas on the right sides of <a class="reference internal" href="#equation-eq-ptformula">(71)</a> by recalling that
-<span class="math notranslate nohighlight">\(R_u\)</span> is a root of the quadratic equation <a class="reference internal" href="#equation-eq-up-steadyquadratic">(68)</a> that determines steady state rates of return on currency.</p>
+<p>We can verify the equivalence of the two formulas on the right sides of <a class="reference internal" href="#equation-eq-ptformula">(76)</a> by recalling that
+<span class="math notranslate nohighlight">\(R_u\)</span> is a root of the quadratic equation <a class="reference internal" href="#equation-eq-up-steadyquadratic">(73)</a> that determines steady state rates of return on currency.</p>
 </section>
 </div></section>
 <section id="algorithm-pseudo-code">
@@ -440,8 +440,8 @@ B_{T-1} = \widetilde R^T B_{-1} + \left( \frac{1 - \widetilde R^T}{1-\widetilde 
 \overline g = g + \left[ \tilde R - 1\right] B_{T-1}
 \]</div>
 <ul class="simple">
-<li><p>Compute <span class="math notranslate nohighlight">\(R_u, p_T\)</span> from formulas <a class="reference internal" href="#equation-eq-up-steadyquadratic">(68)</a>  and <a class="reference internal" href="#equation-eq-laffertstationary">(69)</a> above</p></li>
-<li><p>Compute a new estimate of <span class="math notranslate nohighlight">\(p_0\)</span>, call it <span class="math notranslate nohighlight">\(\widehat p_0\)</span>, from equation <a class="reference internal" href="#equation-eq-allts">(70)</a> above</p></li>
+<li><p>Compute <span class="math notranslate nohighlight">\(R_u, p_T\)</span> from formulas <a class="reference internal" href="#equation-eq-up-steadyquadratic">(73)</a>  and <a class="reference internal" href="#equation-eq-laffertstationary">(74)</a> above</p></li>
+<li><p>Compute a new estimate of <span class="math notranslate nohighlight">\(p_0\)</span>, call it <span class="math notranslate nohighlight">\(\widehat p_0\)</span>, from equation <a class="reference internal" href="#equation-eq-allts">(75)</a> above</p></li>
 <li><p>Note that the preceding steps define a mapping</p></li>
 </ul>
 <div class="math notranslate nohighlight">
@@ -660,7 +660,7 @@ the adjective <em>monetarist</em> in their title.</p>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;&gt;:13: SyntaxWarning: invalid escape sequence &#39;\c&#39;
 &lt;&gt;:13: SyntaxWarning: invalid escape sequence &#39;\c&#39;
-/tmp/ipykernel_454/3027649846.py:13: SyntaxWarning: invalid escape sequence &#39;\c&#39;
+/tmp/ipykernel_480/3027649846.py:13: SyntaxWarning: invalid escape sequence &#39;\c&#39;
   axs[0, 1].text(length * 0.8, model.m0_check * 0.9, &#39;$\check{m}_0$&#39;)
 </pre></div>
 </div>
@@ -771,6 +771,11 @@ the adjective <em>monetarist</em> in their title.</p>
  <li class="toctree-l1">
   <a class="reference internal" href="cons_smooth.html">
    Consumption Smoothing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tax_smooth.html">
+   Tax Smoothing
   </a>
  </li>
  <li class="toctree-l1">

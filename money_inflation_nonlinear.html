@@ -257,20 +257,20 @@ used in his classic paper in place of the linear demand function used in <a clas
 </ul>
 <p>The demand function for money is</p>
 <div class="math notranslate nohighlight" id="equation-eq-mdemand">
-<span class="eqno">(72)<a class="headerlink" href="#equation-eq-mdemand" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(77)<a class="headerlink" href="#equation-eq-mdemand" title="Permalink to this equation">#</a></span>\[
 m_{t+1} - p_t = -\alpha (p_{t+1} - p_t) 
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha \geq 0\)</span>.</p>
 <p>The law of motion of the money supply is</p>
 <div class="math notranslate nohighlight" id="equation-eq-msupply">
-<span class="eqno">(73)<a class="headerlink" href="#equation-eq-msupply" title="Permalink to this equation">#</a></span>\[ 
+<span class="eqno">(78)<a class="headerlink" href="#equation-eq-msupply" title="Permalink to this equation">#</a></span>\[ 
 \exp(m_{t+1}) - \exp(m_t) = g \exp(p_t) 
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(g\)</span> is the part of government expenditures financed by printing money.</p>
 <div class="proof remark admonition" id="linear_log">
 <p class="admonition-title"><span class="caption-number">Remark 5 </span></p>
 <section class="remark-content" id="proof-content">
-<p>Please notice that while equation <a class="reference internal" href="#equation-eq-mdemand">(72)</a> is linear in logs of the money supply and price level, equation <a class="reference internal" href="#equation-eq-msupply">(73)</a> is linear in levels. This will require adapting the equilibrium computation methods that we deployed in <a class="reference internal" href="money_inflation.html"><span class="doc">Money Financed Government Deficits and Price Levels</span></a>.</p>
+<p>Please notice that while equation <a class="reference internal" href="#equation-eq-mdemand">(77)</a> is linear in logs of the money supply and price level, equation <a class="reference internal" href="#equation-eq-msupply">(78)</a> is linear in levels. This will require adapting the equilibrium computation methods that we deployed in <a class="reference internal" href="money_inflation.html"><span class="doc">Money Financed Government Deficits and Price Levels</span></a>.</p>
 </section>
 </div></section>
 <section id="limiting-values-of-inflation-rate">
@@ -284,18 +284,18 @@ m_{t+1} - m_t = p_{t+1} - p_t =  x \quad \forall t ,
 <p>where <span class="math notranslate nohighlight">\(x &gt; 0 \)</span> is a common rate of growth of logarithms of the money supply and price level.</p>
 <p>A few lines of algebra yields the following equation that <span class="math notranslate nohighlight">\(x\)</span> satisfies</p>
 <div class="math notranslate nohighlight" id="equation-eq-steadypi">
-<span class="eqno">(74)<a class="headerlink" href="#equation-eq-steadypi" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(79)<a class="headerlink" href="#equation-eq-steadypi" title="Permalink to this equation">#</a></span>\[
 \exp(-\alpha x) - \exp(-(1 + \alpha) x) = g 
 \]</div>
 <p>where we require that</p>
 <div class="math notranslate nohighlight" id="equation-eq-revmax">
-<span class="eqno">(75)<a class="headerlink" href="#equation-eq-revmax" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(80)<a class="headerlink" href="#equation-eq-revmax" title="Permalink to this equation">#</a></span>\[
 g \leq \max_{x \geq 0} \{\exp(-\alpha x) - \exp(-(1 + \alpha) x) \},  
 \]</div>
 <p>so that it is feasible to finance <span class="math notranslate nohighlight">\(g\)</span> by printing money.</p>
-<p>The left side of <a class="reference internal" href="#equation-eq-steadypi">(74)</a> is steady state revenue raised by printing money.</p>
-<p>The right side of <a class="reference internal" href="#equation-eq-steadypi">(74)</a> is the quantity  of time <span class="math notranslate nohighlight">\(t\)</span> goods  that the government raises by printing money.</p>
-<p>Soon  we’ll plot  the left and right sides of equation <a class="reference internal" href="#equation-eq-steadypi">(74)</a>.</p>
+<p>The left side of <a class="reference internal" href="#equation-eq-steadypi">(79)</a> is steady state revenue raised by printing money.</p>
+<p>The right side of <a class="reference internal" href="#equation-eq-steadypi">(79)</a> is the quantity  of time <span class="math notranslate nohighlight">\(t\)</span> goods  that the government raises by printing money.</p>
+<p>Soon  we’ll plot  the left and right sides of equation <a class="reference internal" href="#equation-eq-steadypi">(79)</a>.</p>
 <p>But first we’ll write code that computes a steady-state
 <span class="math notranslate nohighlight">\(\overline \pi\)</span>.</p>
 <p>Let’s start by importing some  libraries</p>
@@ -514,9 +514,9 @@ eq_g == g: True
 \[
 \lambda \equiv \frac{\alpha}{1+ \alpha}
 \]</div>
-<p>Let’s rewrite equation <a class="reference internal" href="#equation-eq-mdemand">(72)</a>  as</p>
+<p>Let’s rewrite equation <a class="reference internal" href="#equation-eq-mdemand">(77)</a>  as</p>
 <div class="math notranslate nohighlight" id="equation-eq-mdemand2">
-<span class="eqno">(76)<a class="headerlink" href="#equation-eq-mdemand2" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(81)<a class="headerlink" href="#equation-eq-mdemand2" title="Permalink to this equation">#</a></span>\[
 p_t = (1-\lambda) m_{t+1} + \lambda p_{t+1} 
 \]</div>
 <p>We’ll summarize our algorithm with the following pseudo-code.</p>
@@ -526,8 +526,8 @@ to state vector <span class="math notranslate nohighlight">\((m_{t+1}, p_{t+1})\
 <ul class="simple">
 <li><p>starting from a given pair <span class="math notranslate nohighlight">\((m_t, p_t)\)</span> at time <span class="math notranslate nohighlight">\(t \geq 0\)</span></p>
 <ul>
-<li><p>solve <a class="reference internal" href="#equation-eq-msupply">(73)</a> for <span class="math notranslate nohighlight">\(m_{t+1}\)</span></p></li>
-<li><p>solve <a class="reference internal" href="#equation-eq-mdemand2">(76)</a> for <span class="math notranslate nohighlight">\(p_{t+1} = \lambda^{-1} p_t + (1 - \lambda^{-1}) m_{t+1}\)</span></p></li>
+<li><p>solve <a class="reference internal" href="#equation-eq-msupply">(78)</a> for <span class="math notranslate nohighlight">\(m_{t+1}\)</span></p></li>
+<li><p>solve <a class="reference internal" href="#equation-eq-mdemand2">(81)</a> for <span class="math notranslate nohighlight">\(p_{t+1} = \lambda^{-1} p_t + (1 - \lambda^{-1}) m_{t+1}\)</span></p></li>
 <li><p>compute the inflation rate <span class="math notranslate nohighlight">\(\pi_t = p_{t+1} - p_t\)</span> and growth of money supply <span class="math notranslate nohighlight">\(\mu_t = m_{t+1} - m_t \)</span></p></li>
 </ul>
 </li>
@@ -752,6 +752,11 @@ on grounds of plausibility, we  again recommend  selecting the unique equilibriu
  <li class="toctree-l1">
   <a class="reference internal" href="cons_smooth.html">
    Consumption Smoothing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tax_smooth.html">
+   Tax Smoothing
   </a>
  </li>
  <li class="toctree-l1">

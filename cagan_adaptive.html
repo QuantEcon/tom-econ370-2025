@@ -256,27 +256,27 @@ the model.</p>
 </ul>
 <p>The demand for real balances <span class="math notranslate nohighlight">\(\exp\left(m_t^d-p_t\right)\)</span> is governed by the following  version of the Cagan demand function</p>
 <div class="math notranslate nohighlight" id="equation-eq-caganmd-ad">
-<span class="eqno">(32)<a class="headerlink" href="#equation-eq-caganmd-ad" title="Permalink to this equation">#</a></span>\[  
+<span class="eqno">(37)<a class="headerlink" href="#equation-eq-caganmd-ad" title="Permalink to this equation">#</a></span>\[  
 m_t^d - p_t = -\alpha \pi_t^* \: , \: \alpha &gt; 0 ; \quad t = 0, 1, \ldots, T .
 \]</div>
 <p>This equation  asserts that the demand for real balances
 is inversely related to the public’s expected rate of inflation with sensitivity <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
-<p>Equating the logarithm <span class="math notranslate nohighlight">\(m_t^d\)</span> of the demand for money  to the logarithm  <span class="math notranslate nohighlight">\(m_t\)</span> of the supply of money in equation <a class="reference internal" href="#equation-eq-caganmd-ad">(32)</a> and solving for the logarithm <span class="math notranslate nohighlight">\(p_t\)</span>
+<p>Equating the logarithm <span class="math notranslate nohighlight">\(m_t^d\)</span> of the demand for money  to the logarithm  <span class="math notranslate nohighlight">\(m_t\)</span> of the supply of money in equation <a class="reference internal" href="#equation-eq-caganmd-ad">(37)</a> and solving for the logarithm <span class="math notranslate nohighlight">\(p_t\)</span>
 of the price level gives</p>
 <div class="math notranslate nohighlight" id="equation-eq-eqfiscth1">
-<span class="eqno">(33)<a class="headerlink" href="#equation-eq-eqfiscth1" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(38)<a class="headerlink" href="#equation-eq-eqfiscth1" title="Permalink to this equation">#</a></span>\[
 p_t = m_t + \alpha \pi_t^*
 \]</div>
-<p>Taking the difference between equation <a class="reference internal" href="#equation-eq-eqfiscth1">(33)</a> at time <span class="math notranslate nohighlight">\(t+1\)</span> and at time
+<p>Taking the difference between equation <a class="reference internal" href="#equation-eq-eqfiscth1">(38)</a> at time <span class="math notranslate nohighlight">\(t+1\)</span> and at time
 <span class="math notranslate nohighlight">\(t\)</span> gives</p>
 <div class="math notranslate nohighlight" id="equation-eq-eqpipi">
-<span class="eqno">(34)<a class="headerlink" href="#equation-eq-eqpipi" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(39)<a class="headerlink" href="#equation-eq-eqpipi" title="Permalink to this equation">#</a></span>\[
 \pi_t = \mu_t + \alpha \pi_{t+1}^* - \alpha \pi_t^*
 \]</div>
 <p>We assume that the expected rate of inflation <span class="math notranslate nohighlight">\(\pi_t^*\)</span> is governed
 by the following adaptive expectations scheme proposed by <span id="id2">[<a class="reference internal" href="zreferences.html#id183" title="M. Friedman. A Theory of the Consumption Function. Princeton University Press, 1956.">Friedman, 1956</a>]</span> and <span id="id3">[<a class="reference internal" href="zreferences.html#id112" title="Philip Cagan. The monetary dynamics of hyperinflation. In Milton Friedman, editor, Studies in the Quantity Theory of Money, pages 25–117. University of Chicago Press, Chicago, 1956.">Cagan, 1956</a>]</span>, where <span class="math notranslate nohighlight">\(\lambda\in [0,1]\)</span> denotes the weight on expected inflation.</p>
 <div class="math notranslate nohighlight" id="equation-eq-adaptexpn">
-<span class="eqno">(35)<a class="headerlink" href="#equation-eq-adaptexpn" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(40)<a class="headerlink" href="#equation-eq-adaptexpn" title="Permalink to this equation">#</a></span>\[
 \pi_{t+1}^* = \lambda \pi_t^* + (1 -\lambda) \pi_t 
 \]</div>
 <p>As exogenous inputs into the model, we take initial conditions <span class="math notranslate nohighlight">\(m_0, \pi_0^*\)</span>
@@ -287,7 +287,7 @@ the model inputs.</p>
 </section>
 <section id="representing-key-equations-with-linear-algebra">
 <h2>Representing key equations with linear algebra<a class="headerlink" href="#representing-key-equations-with-linear-algebra" title="Permalink to this heading">#</a></h2>
-<p>We begin by writing the equation <a class="reference internal" href="#equation-eq-adaptexpn">(35)</a>  adaptive expectations model for <span class="math notranslate nohighlight">\(\pi_t^*\)</span> for <span class="math notranslate nohighlight">\(t=0, \ldots, T\)</span> as</p>
+<p>We begin by writing the equation <a class="reference internal" href="#equation-eq-adaptexpn">(40)</a>  adaptive expectations model for <span class="math notranslate nohighlight">\(\pi_t^*\)</span> for <span class="math notranslate nohighlight">\(t=0, \ldots, T\)</span> as</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \cr
@@ -314,12 +314,12 @@ the model inputs.</p>
 \]</div>
 <p>Write this equation as</p>
 <div class="math notranslate nohighlight" id="equation-eq-eq1">
-<span class="eqno">(36)<a class="headerlink" href="#equation-eq-eq1" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(41)<a class="headerlink" href="#equation-eq-eq1" title="Permalink to this equation">#</a></span>\[
  A \pi^* = (1-\lambda) B \pi + \pi_0^*
 \]</div>
 <p>where the <span class="math notranslate nohighlight">\((T+2) \times (T+2) \)</span>matrix <span class="math notranslate nohighlight">\(A\)</span>, the <span class="math notranslate nohighlight">\((T+2)\times (T+1)\)</span> matrix <span class="math notranslate nohighlight">\(B\)</span>, and the vectors <span class="math notranslate nohighlight">\(\pi^* , \pi_0, \pi_0^*\)</span>
 are defined implicitly by aligning these two equations.</p>
-<p>Next we write the key equation <a class="reference internal" href="#equation-eq-eqpipi">(34)</a> in matrix notation as</p>
+<p>Next we write the key equation <a class="reference internal" href="#equation-eq-eqpipi">(39)</a> in matrix notation as</p>
 <div class="math notranslate nohighlight">
 \[ 
 \begin{bmatrix}
@@ -341,7 +341,7 @@ are defined implicitly by aligning these two equations.</p>
 \]</div>
 <p>Represent the previous equation system in terms of vectors and matrices as</p>
 <div class="math notranslate nohighlight" id="equation-eq-eq2">
-<span class="eqno">(37)<a class="headerlink" href="#equation-eq-eq2" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(42)<a class="headerlink" href="#equation-eq-eq2" title="Permalink to this equation">#</a></span>\[
 \pi = \mu + C \pi^*
 \]</div>
 <p>where the <span class="math notranslate nohighlight">\((T+1) \times (T+2)\)</span> matrix <span class="math notranslate nohighlight">\(C\)</span> is defined implicitly to align this equation with the preceding
@@ -351,7 +351,7 @@ equation system.</p>
 <h2>Harvesting insights from our matrix formulation<a class="headerlink" href="#harvesting-insights-from-our-matrix-formulation" title="Permalink to this heading">#</a></h2>
 <p>We now have all of the ingredients we need to solve for <span class="math notranslate nohighlight">\(\pi\)</span> as
 a function of <span class="math notranslate nohighlight">\(\mu, \pi_0, \pi_0^*\)</span>.</p>
-<p>Combine equations <a class="reference internal" href="#equation-eq-eq1">(36)</a>and <a class="reference internal" href="#equation-eq-eq2">(37)</a>  to get</p>
+<p>Combine equations <a class="reference internal" href="#equation-eq-eq1">(41)</a>and <a class="reference internal" href="#equation-eq-eq2">(42)</a>  to get</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{aligned}
@@ -366,10 +366,10 @@ A \pi^* &amp; = (1-\lambda) B \pi + \pi_0^* \cr
 \]</div>
 <p>Multiplying both sides of the above equation by the inverse of the matrix on the left side gives</p>
 <div class="math notranslate nohighlight" id="equation-eq-eq4">
-<span class="eqno">(38)<a class="headerlink" href="#equation-eq-eq4" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(43)<a class="headerlink" href="#equation-eq-eq4" title="Permalink to this equation">#</a></span>\[
 \pi^* = \left[ A - (1-\lambda) B C \right]^{-1} \left[ (1-\lambda) B \mu+ \pi_0^* \right]
 \]</div>
-<p>Having solved equation <a class="reference internal" href="#equation-eq-eq4">(38)</a> for <span class="math notranslate nohighlight">\(\pi^*\)</span>, we can use  equation <a class="reference internal" href="#equation-eq-eq2">(37)</a>  to solve for <span class="math notranslate nohighlight">\(\pi\)</span>:</p>
+<p>Having solved equation <a class="reference internal" href="#equation-eq-eq4">(43)</a> for <span class="math notranslate nohighlight">\(\pi^*\)</span>, we can use  equation <a class="reference internal" href="#equation-eq-eq2">(42)</a>  to solve for <span class="math notranslate nohighlight">\(\pi\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \pi = \mu + C \pi^*
@@ -377,7 +377,7 @@ A \pi^* &amp; = (1-\lambda) B \pi + \pi_0^* \cr
 <p>We have thus solved for two of the key endogenous time series determined by our model, namely, the sequence <span class="math notranslate nohighlight">\(\pi^*\)</span>
 of expected inflation rates and the sequence <span class="math notranslate nohighlight">\(\pi\)</span> of actual inflation rates.</p>
 <p>Knowing these, we can then quickly calculate the associated sequence <span class="math notranslate nohighlight">\(p\)</span>  of the logarithm of the  price level
-from equation <a class="reference internal" href="#equation-eq-eqfiscth1">(33)</a>.</p>
+from equation <a class="reference internal" href="#equation-eq-eqfiscth1">(38)</a>.</p>
 <p>Let’s fill in the details for this step.</p>
 <p>Since we now know <span class="math notranslate nohighlight">\(\mu\)</span>  it is easy to compute <span class="math notranslate nohighlight">\(m\)</span>.</p>
 <p>Thus, notice that we can represent the equations</p>
@@ -387,7 +387,7 @@ m_{t+1} = m_t + \mu_t , \quad t = 0, 1, \ldots, T
 \]</div>
 <p>as the matrix equation</p>
 <div class="math notranslate nohighlight" id="equation-eq-eq101-ad">
-<span class="eqno">(39)<a class="headerlink" href="#equation-eq-eq101-ad" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(44)<a class="headerlink" href="#equation-eq-eq101-ad" title="Permalink to this equation">#</a></span>\[
 \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \cr
 -1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \cr
@@ -406,14 +406,14 @@ m_1 \cr m_2 \cr m_3 \cr \vdots \cr m_T \cr m_{T+1}
 m_0 \cr 0 \cr 0 \cr \vdots \cr 0 \cr 0
 \end{bmatrix}
 \]</div>
-<p>Multiplying both sides of equation <a class="reference internal" href="#equation-eq-eq101-ad">(39)</a>  with the inverse of the matrix on the left will give</p>
+<p>Multiplying both sides of equation <a class="reference internal" href="#equation-eq-eq101-ad">(44)</a>  with the inverse of the matrix on the left will give</p>
 <div class="math notranslate nohighlight" id="equation-eq-mcum-ad">
-<span class="eqno">(40)<a class="headerlink" href="#equation-eq-mcum-ad" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(45)<a class="headerlink" href="#equation-eq-mcum-ad" title="Permalink to this equation">#</a></span>\[
 m_t = m_0 + \sum_{s=0}^{t-1} \mu_s, \quad t =1, \ldots, T+1
 \]</div>
-<p>Equation <a class="reference internal" href="#equation-eq-mcum-ad">(40)</a> shows that the log of the money supply at <span class="math notranslate nohighlight">\(t\)</span> equals the log <span class="math notranslate nohighlight">\(m_0\)</span> of the initial money supply
+<p>Equation <a class="reference internal" href="#equation-eq-mcum-ad">(45)</a> shows that the log of the money supply at <span class="math notranslate nohighlight">\(t\)</span> equals the log <span class="math notranslate nohighlight">\(m_0\)</span> of the initial money supply
 plus accumulation of rates of money growth between times <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<p>We can then compute <span class="math notranslate nohighlight">\(p_t\)</span> for each <span class="math notranslate nohighlight">\(t\)</span> from equation <a class="reference internal" href="#equation-eq-eqfiscth1">(33)</a>.</p>
+<p>We can then compute <span class="math notranslate nohighlight">\(p_t\)</span> for each <span class="math notranslate nohighlight">\(t\)</span> from equation <a class="reference internal" href="#equation-eq-eqfiscth1">(38)</a>.</p>
 <p>We can write a compact formula for <span class="math notranslate nohighlight">\(p \)</span> as</p>
 <div class="math notranslate nohighlight">
 \[ 
@@ -440,12 +440,12 @@ p = m + \alpha \hat \pi^*
 \]</div>
 <p>so that in general</p>
 <div class="math notranslate nohighlight" id="equation-eq-notre">
-<span class="eqno">(41)<a class="headerlink" href="#equation-eq-notre" title="Permalink to this equation">#</a></span>\[ 
+<span class="eqno">(46)<a class="headerlink" href="#equation-eq-notre" title="Permalink to this equation">#</a></span>\[ 
 \pi_t^* \neq \pi_t, \quad t = 0, 1, \ldots , T
 \]</div>
-<p>This outcome is typical in models in which adaptive expectations hypothesis like equation <a class="reference internal" href="#equation-eq-adaptexpn">(35)</a> appear as a
+<p>This outcome is typical in models in which adaptive expectations hypothesis like equation <a class="reference internal" href="#equation-eq-adaptexpn">(40)</a> appear as a
 component.</p>
-<p>In <a class="reference internal" href="cagan_ree.html"><span class="doc">A Monetarist Theory of Price Levels</span></a>, we studied a version of the model that replaces hypothesis <a class="reference internal" href="#equation-eq-adaptexpn">(35)</a> with
+<p>In <a class="reference internal" href="cagan_ree.html"><span class="doc">A Monetarist Theory of Price Levels</span></a>, we studied a version of the model that replaces hypothesis <a class="reference internal" href="#equation-eq-adaptexpn">(40)</a> with
 a “perfect foresight” or “rational expectations” hypothesis.</p>
 <p>But now, let’s dive in and do some computations with the adaptive expectations version of the model.</p>
 <p>As usual, we’ll start by importing some Python modules.</p>
@@ -542,7 +542,7 @@ a “perfect foresight” or “rational expectations” hypothesis.</p>
 <h2>Technical condition for stability<a class="headerlink" href="#technical-condition-for-stability" title="Permalink to this heading">#</a></h2>
 <p>In constructing our examples, we shall assume that <span class="math notranslate nohighlight">\((\lambda, \alpha)\)</span> satisfy</p>
 <div class="math notranslate nohighlight" id="equation-eq-suffcond">
-<span class="eqno">(42)<a class="headerlink" href="#equation-eq-suffcond" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(47)<a class="headerlink" href="#equation-eq-suffcond" title="Permalink to this equation">#</a></span>\[
 \Bigl| \frac{\lambda-\alpha(1-\lambda)}{1-\alpha(1-\lambda)} \Bigr| &lt; 1
 \]</div>
 <p>The  source of this condition is the following string of deductions:</p>
@@ -552,8 +552,8 @@ a “perfect foresight” or “rational expectations” hypothesis.</p>
 \pi_{t}&amp;=\mu_{t}+\alpha\pi_{t+1}^{*}-\alpha\pi_{t}^{*}\\\pi_{t+1}^{*}&amp;=\lambda\pi_{t}^{*}+(1-\lambda)\pi_{t}\\\pi_{t}&amp;=\frac{\mu_{t}}{1-\alpha(1-\lambda)}-\frac{\alpha(1-\lambda)}{1-\alpha(1-\lambda)}\pi_{t}^{*}\\\implies\pi_{t}^{*}&amp;=\frac{1}{\alpha(1-\lambda)}\mu_{t}-\frac{1-\alpha(1-\lambda)}{\alpha(1-\lambda)}\pi_{t}\\\pi_{t+1}&amp;=\frac{\mu_{t+1}}{1-\alpha(1-\lambda)}-\frac{\alpha(1-\lambda)}{1-\alpha(1-\lambda)}\left(\lambda\pi_{t}^{*}+(1-\lambda)\pi_{t}\right)\\&amp;=\frac{\mu_{t+1}}{1-\alpha(1-\lambda)}-\frac{\lambda}{1-\alpha(1-\lambda)}\mu_{t}+\frac{\lambda-\alpha(1-\lambda)}{1-\alpha(1-\lambda)}\pi_{t}
 \end{aligned}
 \end{split}\]</div>
-<p>By assuring that the coefficient on <span class="math notranslate nohighlight">\(\pi_t\)</span> is less than one in absolute value, condition <a class="reference internal" href="#equation-eq-suffcond">(42)</a> assures stability of the dynamics of <span class="math notranslate nohighlight">\(\{\pi_t\}\)</span> described by the last line of our string of deductions.</p>
-<p>The reader is free to study outcomes in examples that violate condition <a class="reference internal" href="#equation-eq-suffcond">(42)</a>.</p>
+<p>By assuring that the coefficient on <span class="math notranslate nohighlight">\(\pi_t\)</span> is less than one in absolute value, condition <a class="reference internal" href="#equation-eq-suffcond">(47)</a> assures stability of the dynamics of <span class="math notranslate nohighlight">\(\{\pi_t\}\)</span> described by the last line of our string of deductions.</p>
+<p>The reader is free to study outcomes in examples that violate condition <a class="reference internal" href="#equation-eq-suffcond">(47)</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">md</span><span class="o">.</span><span class="n">λ</span> <span class="o">-</span> <span class="n">md</span><span class="o">.</span><span class="n">α</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">md</span><span class="o">.</span><span class="n">λ</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">md</span><span class="o">.</span><span class="n">α</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">md</span><span class="o">.</span><span class="n">λ</span><span class="p">))))</span>
@@ -714,6 +714,11 @@ decline from a high value to a persistently low value.</p>
  <li class="toctree-l1">
   <a class="reference internal" href="cons_smooth.html">
    Consumption Smoothing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tax_smooth.html">
+   Tax Smoothing
   </a>
  </li>
  <li class="toctree-l1">

@@ -235,7 +235,7 @@ we’ll adopt the ‘‘adaptive expectations’’ assumption used by  <span id
 \[
 \pi_t^* = p_{t+1} - p_t
 \]</div>
-<p>that we adopted in lectures <a class="reference internal" href="money_inflation.html"><span class="doc">Money Financed Government Deficits and Price Levels</span></a> and lectures <a class="reference internal" href="money_inflation_nonlinear.html"><span class="doc">Inflation Rate Laffer Curves</span></a>, we’ll now assume that <span class="math notranslate nohighlight">\(\pi_t^*\)</span> is determined by the adaptive expectations hypothesis described in equation <a class="reference internal" href="#equation-eq-adaptex">(80)</a>  reported below.</p>
+<p>that we adopted in lectures <a class="reference internal" href="money_inflation.html"><span class="doc">Money Financed Government Deficits and Price Levels</span></a> and lectures <a class="reference internal" href="money_inflation_nonlinear.html"><span class="doc">Inflation Rate Laffer Curves</span></a>, we’ll now assume that <span class="math notranslate nohighlight">\(\pi_t^*\)</span> is determined by the adaptive expectations hypothesis described in equation <a class="reference internal" href="#equation-eq-adaptex">(85)</a>  reported below.</p>
 <p>We shall discover that changing our hypothesis about expectations formation in this way will change some our findings and leave others intact.  In particular, we shall discover that</p>
 <ul class="simple">
 <li><p>replacing rational expectations with adaptive expectations leaves the two stationary inflation rates unchanged, but that <span class="math notranslate nohighlight">\(\ldots\)</span></p></li>
@@ -247,7 +247,7 @@ we’ll adopt the ‘‘adaptive expectations’’ assumption used by  <span id
 <p>These issues were studied by <span id="id4">[<a class="reference internal" href="zreferences.html#id296" title="Michael Bruno and Stanley Fischer. Seigniorage, operating rules, and the high inflation trap. The Quarterly Journal of Economics, 105(2):353–374, 1990.">Bruno and Fischer, 1990</a>]</span>.</p>
 <p>Their purpose was to reverse  what they thought were counter intuitive
 predictions of their model under rational expectations (i.e., perfect foresight in this context)
-by dropping rational expectations and instead assuming that people form  expectations about future inflation rates according to the “adaptive expectations”  scheme <a class="reference internal" href="#equation-eq-adaptex">(80)</a> described below.</p>
+by dropping rational expectations and instead assuming that people form  expectations about future inflation rates according to the “adaptive expectations”  scheme <a class="reference internal" href="#equation-eq-adaptex">(85)</a> described below.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><span id="id5">[<a class="reference internal" href="zreferences.html#id297" title="Albert Marcet and Thomas J Sargent. Least squares learning and the dynamics of hyperinflation. In William Barnett, John Geweke and Karl Shell, editors, Sunspots, Complexity, and Chaos. Cambridge University Press, 1989.">Marcet and Sargent, 1989</a>]</span>  had studied another way of selecting stationary equilibrium that involved replacing rational expectations with a model of  learning via least squares regression.<br />
@@ -264,34 +264,34 @@ by dropping rational expectations and instead assuming that people form  expecta
 </ul>
 <p>The law of motion of the money supply is</p>
 <div class="math notranslate nohighlight" id="equation-eq-ada-msupply">
-<span class="eqno">(77)<a class="headerlink" href="#equation-eq-ada-msupply" title="Permalink to this equation">#</a></span>\[ 
+<span class="eqno">(82)<a class="headerlink" href="#equation-eq-ada-msupply" title="Permalink to this equation">#</a></span>\[ 
 \exp(m_{t+1}) - \exp(m_t) = g \exp(p_t) 
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(g\)</span> is the part of government expenditures financed by printing money.</p>
-<p>Notice that equation <a class="reference internal" href="#equation-eq-ada-msupply">(77)</a> implies that</p>
+<p>Notice that equation <a class="reference internal" href="#equation-eq-ada-msupply">(82)</a> implies that</p>
 <div class="math notranslate nohighlight" id="equation-eq-ada-msupply2">
-<span class="eqno">(78)<a class="headerlink" href="#equation-eq-ada-msupply2" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(83)<a class="headerlink" href="#equation-eq-ada-msupply2" title="Permalink to this equation">#</a></span>\[
 m_{t+1} = \log[ \exp(m_t) + g \exp(p_t)]
 \]</div>
 <p>The demand function for money is</p>
 <div class="math notranslate nohighlight" id="equation-eq-ada-mdemand">
-<span class="eqno">(79)<a class="headerlink" href="#equation-eq-ada-mdemand" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(84)<a class="headerlink" href="#equation-eq-ada-mdemand" title="Permalink to this equation">#</a></span>\[
 m_{t+1} - p_t = -\alpha \pi_t^* 
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha \geq 0\)</span>.</p>
 <p>Expectations of inflation are governed by</p>
 <div class="math notranslate nohighlight" id="equation-eq-adaptex">
-<span class="eqno">(80)<a class="headerlink" href="#equation-eq-adaptex" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(85)<a class="headerlink" href="#equation-eq-adaptex" title="Permalink to this equation">#</a></span>\[
 \pi_{t}^* = (1-\delta) (p_t - p_{t-1}) + \delta \pi_{t-1}^*
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\delta \in (0,1)\)</span></p>
 </section>
 <section id="computing-an-equilibrium-sequence">
 <h2>Computing an equilibrium sequence<a class="headerlink" href="#computing-an-equilibrium-sequence" title="Permalink to this heading">#</a></h2>
-<p>Equation the expressions for <span class="math notranslate nohighlight">\(m_{t+1}\)</span> provided  by <a class="reference internal" href="#equation-eq-ada-mdemand">(79)</a> and <a class="reference internal" href="#equation-eq-ada-msupply2">(78)</a> and use equation <a class="reference internal" href="#equation-eq-adaptex">(80)</a> to eliminate <span class="math notranslate nohighlight">\(\pi_t^*\)</span> to obtain
+<p>Equation the expressions for <span class="math notranslate nohighlight">\(m_{t+1}\)</span> provided  by <a class="reference internal" href="#equation-eq-ada-mdemand">(84)</a> and <a class="reference internal" href="#equation-eq-ada-msupply2">(83)</a> and use equation <a class="reference internal" href="#equation-eq-adaptex">(85)</a> to eliminate <span class="math notranslate nohighlight">\(\pi_t^*\)</span> to obtain
 the following equation for <span class="math notranslate nohighlight">\(p_t\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-eq-pequation">
-<span class="eqno">(81)<a class="headerlink" href="#equation-eq-pequation" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(86)<a class="headerlink" href="#equation-eq-pequation" title="Permalink to this equation">#</a></span>\[
 \log[ \exp(m_t) + g \exp(p_t)] - p_t = -\alpha [(1-\delta) (p_t - p_{t-1}) + \delta \pi_{t-1}^*]
 \]</div>
 <p><strong>Pseudo-code</strong></p>
@@ -299,9 +299,9 @@ the following equation for <span class="math notranslate nohighlight">\(p_t\)</s
 <p>Starting at time <span class="math notranslate nohighlight">\(0\)</span> with initial conditions <span class="math notranslate nohighlight">\((m_0, \pi_{-1}^*, p_{-1})\)</span>, for each <span class="math notranslate nohighlight">\(t \geq 0\)</span>
 deploy the following steps in order:</p>
 <ul class="simple">
-<li><p>solve <a class="reference internal" href="#equation-eq-pequation">(81)</a> for <span class="math notranslate nohighlight">\(p_t\)</span></p></li>
-<li><p>solve equation <a class="reference internal" href="#equation-eq-adaptex">(80)</a> for <span class="math notranslate nohighlight">\(\pi_t^*\)</span></p></li>
-<li><p>solve equation <a class="reference internal" href="#equation-eq-ada-msupply2">(78)</a> for <span class="math notranslate nohighlight">\(m_{t+1}\)</span></p></li>
+<li><p>solve <a class="reference internal" href="#equation-eq-pequation">(86)</a> for <span class="math notranslate nohighlight">\(p_t\)</span></p></li>
+<li><p>solve equation <a class="reference internal" href="#equation-eq-adaptex">(85)</a> for <span class="math notranslate nohighlight">\(\pi_t^*\)</span></p></li>
+<li><p>solve equation <a class="reference internal" href="#equation-eq-ada-msupply2">(83)</a> for <span class="math notranslate nohighlight">\(m_{t+1}\)</span></p></li>
 </ul>
 <p>This completes the algorithm.</p>
 </section>
@@ -331,18 +331,18 @@ m_{t+1} - m_t = p_{t+1} - p_t =  x \quad \forall t ,
 <p>where <span class="math notranslate nohighlight">\(x &gt; 0 \)</span> is a common rate of growth of logarithms of the money supply and price level.</p>
 <p>A few lines of algebra yields the following equation that <span class="math notranslate nohighlight">\(x\)</span> satisfies</p>
 <div class="math notranslate nohighlight" id="equation-eq-ada-steadypi">
-<span class="eqno">(82)<a class="headerlink" href="#equation-eq-ada-steadypi" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(87)<a class="headerlink" href="#equation-eq-ada-steadypi" title="Permalink to this equation">#</a></span>\[
 \exp(-\alpha x) - \exp(-(1 + \alpha) x) = g 
 \]</div>
 <p>where we require that</p>
 <div class="math notranslate nohighlight" id="equation-eq-ada-revmax">
-<span class="eqno">(83)<a class="headerlink" href="#equation-eq-ada-revmax" title="Permalink to this equation">#</a></span>\[
+<span class="eqno">(88)<a class="headerlink" href="#equation-eq-ada-revmax" title="Permalink to this equation">#</a></span>\[
 g \leq \max_{x: x \geq 0} \exp(-\alpha x) - \exp(-(1 + \alpha) x) ,  
 \]</div>
 <p>so that it is feasible to finance <span class="math notranslate nohighlight">\(g\)</span> by printing money.</p>
-<p>The left side of <a class="reference internal" href="#equation-eq-ada-steadypi">(82)</a> is steady state revenue raised by printing money.</p>
-<p>The right side of <a class="reference internal" href="#equation-eq-ada-steadypi">(82)</a> is the quantity  of time <span class="math notranslate nohighlight">\(t\)</span> goods  that the government raises by printing money.</p>
-<p>Soon  we’ll plot  the left and right sides of equation <a class="reference internal" href="#equation-eq-ada-steadypi">(82)</a>.</p>
+<p>The left side of <a class="reference internal" href="#equation-eq-ada-steadypi">(87)</a> is steady state revenue raised by printing money.</p>
+<p>The right side of <a class="reference internal" href="#equation-eq-ada-steadypi">(87)</a> is the quantity  of time <span class="math notranslate nohighlight">\(t\)</span> goods  that the government raises by printing money.</p>
+<p>Soon  we’ll plot  the left and right sides of equation <a class="reference internal" href="#equation-eq-ada-steadypi">(87)</a>.</p>
 <p>But first we’ll write code that computes a steady-state
 <span class="math notranslate nohighlight">\(\bar \pi\)</span>.</p>
 <p>Let’s start by importing some  libraries</p>
@@ -761,6 +761,11 @@ eq_g == g: True
  <li class="toctree-l1">
   <a class="reference internal" href="cons_smooth.html">
    Consumption Smoothing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tax_smooth.html">
+   Tax Smoothing
   </a>
  </li>
  <li class="toctree-l1">
